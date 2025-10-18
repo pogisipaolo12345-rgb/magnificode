@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learn Web Programming — MAGNIFICODE</title>
+  <meta name="description" content="A student project: learn HTML, CSS, and JavaScript with interactive examples and a quiz." />
+  <link rel="stylesheet" href="website.css" />
+<link rel="icon" href="data:logomaxmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23fff'%3E%3C/rect%3E%3Ctext x='50' y='58' font-size='48' text-anchor='middle' fill='%23000' font-family='Arial' font-weight='700'%3EW%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <div class="logo">
+  <img src="magnilogo.png" alt="MagnifiCode Logo">
+</div>
+        <div>
+          <h1 class="site-title">Learn Basic Coding Language - MAGNIFICODE</h1>
+          <p class="tag">HTML • CSS • JavaScript — Grade 12 Project</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#quiz" class="cta">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome — Learn by Doing</h2>
+      <p>Explore simple explanations, live code examples, and a quick quiz to test your knowledge.</p>
+      <div class="hero-actions">
+        <a href="#html" class="btn">Start with HTML</a>
+        <a href="#quiz" class="btn ghost">Take the Quiz</a>
+      </div>
+    </section>
+
+    <section id="html" class="card">
+      <h3>HTML — Structure</h3>
+      <p>HTML defines the content and structure of a webpage using tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code>.</p>
+
+      <div class="example">
+        <h4>Example: Basic HTML</h4>
+        <pre><code>&lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;</code></pre>
+      </div>
+
+      <div class="live">
+        <h4>Live preview</h4>
+        <div class="live-preview" id="html-preview">
+          <h4>Live: Hello, world!</h4>
+          <p>This is a paragraph.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="css" class="card">
+      <h3>CSS — Styling</h3>
+      <p>CSS controls the look: colors, spacing, fonts, and layout.</p>
+
+      <div class="example">
+        <h4>Example: Simple CSS</h4>
+        <pre><code>h1 { color: #fff; text-align: center; }
+button { background: #06f; color: #fff; }</code></pre>
+      </div>
+
+      <div class="live">
+        <h4>Live styling example</h4>
+        <p>Change the theme color:</p>
+        <div class="controls">
+          <label>Pick accent:
+            <input type="color" id="accentColor" value="#1abc9c" />
+          </label>
+          <button id="applyAccent">Apply</button>
+        </div>
+
+        <div class="styled-box" id="styledBox">
+          <h4>Styled box</h4>
+          <p>This box shows how CSS updates look instantly.</p>
+          <button onclick="alert('Button inside styled box')">Try me</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="js" class="card">
+      <h3>JavaScript — Interactivity</h3>
+      <p>JavaScript makes web pages interactive — handle clicks, change content, and add logic.</p>
+
+      <div class="example">
+        <h4>Example: Simple JS</h4>
+        <pre><code>function greet(name) {
+  return 'Hello, ' + name + '!';
+}</code></pre>
+      </div>
+
+      <div class="live">
+        <h4>Live JS playground</h4>
+        <label>Enter your name:
+          <input type="text" id="nameInput" placeholder="Type your name" />
+        </label>
+        <button id="greetBtn">Greet me</button>
+        <p id="greetResult" class="muted">Result will appear here.</p>
+      </div>
+    </section>
+
+    <section id="quiz" class="card">
+  <h3>Quick Quiz (10 Questions)</h3>
+  <p>Test your knowledge of HTML, CSS, and JavaScript — instant score and feedback!</p>
+
+  <form id="quizForm" class="quiz-form" onsubmit="return false;">
+    <div class="q">
+      <p><strong>1.</strong> What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label>
+      <label><input type="radio" name="q1" value="b"> HighText Machine Language</label>
+    </div>
+
+    <div class="q">
+      <p><strong>2.</strong> Which tag is used to link a CSS file to HTML?</p>
+      <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label>
+      <label><input type="radio" name="q2" value="b"> &lt;style&gt;</label>
+    </div>
+
+    <div class="q">
+      <p><strong>3.</strong> What is used to add interactivity to a website?</p>
+      <label><input type="radio" name="q3" value="a"> CSS</label>
+      <label><input type="radio" name="q3" value="c"> JavaScript</label>
+    </div>
+
+    <div class="q">
+      <p><strong>4.</strong> Which property changes the text color in CSS?</p>
+      <label><input type="radio" name="q4" value="a"> font-color</label>
+      <label><input type="radio" name="q4" value="c"> color</label>
+    </div>
+
+    <div class="q">
+      <p><strong>5.</strong> Which symbol is used for comments in JavaScript?</p>
+      <label><input type="radio" name="q5" value="a"> //</label>
+      <label><input type="radio" name="q5" value="b"> &lt;!-- --&gt;</label>
+    </div>
+
+    <div class="q">
+      <p><strong>6.</strong> What does CSS stand for?</p>
+      <label><input type="radio" name="q6" value="a"> Cascading Style Sheets</label>
+      <label><input type="radio" name="q6" value="b"> Computer Styling System</label>
+    </div>
+
+    <div class="q">
+      <p><strong>7.</strong> Which HTML tag is used to display images?</p>
+      <label><input type="radio" name="q7" value="a"> &lt;img&gt;</label>
+      <label><input type="radio" name="q7" value="b"> &lt;image&gt;</label>
+    </div>
+
+    <div class="q">
+      <p><strong>8.</strong> Which HTML tag makes text bold?</p>
+      <label><input type="radio" name="q8" value="a"> &lt;strong&gt;</label>
+      <label><input type="radio" name="q8" value="b"> &lt;italic&gt;</label>
+    </div>
+
+    <div class="q">
+      <p><strong>9.</strong> Which symbol is used to end a JavaScript statement?</p>
+      <label><input type="radio" name="q9" value="a"> ,</label>
+      <label><input type="radio" name="q9" value="c"> ;</label>
+    </div>
+
+    <div class="q">
+      <p><strong>10.</strong> Which HTML tag creates a paragraph?</p>
+      <label><input type="radio" name="q10" value="a"> &lt;h1&gt;</label>
+      <label><input type="radio" name="q10" value="b"> &lt;p&gt;</label>
+    </div>
+
+    <div class="quiz-actions">
+      <button id="submitQuiz" class="btn">Submit</button>
+      <button id="resetQuiz" class="btn ghost" type="button">Reset</button>
+    </div>
+
+    <div id="quizResult" class="result" aria-live="polite"></div>
+  </form>
+</section>
+  </main>
+  
+  <footer class="footer">
+  <div class="footer-content">
+    <p><strong>MAGNIFICODE</strong> — Learn Web Programming</p>
+    <p>Created by a Grade 12 ICT Student • © 2025</p>
+    <p class="muted">Built with HTML, CSS, and JavaScript for educational purposes.</p>
+
+    <div class="social-links">
+      <a href="#" title="Facebook">🌐</a>
+      <a href="#" title="GitHub">💻</a>
+      <a href="#" title="Email">✉️</a>
+    </div>
+  </div>
+
+  <script src="website.js"></script>
+</body>
+</html>
